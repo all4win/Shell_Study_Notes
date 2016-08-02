@@ -1,0 +1,22 @@
+Shell Study Notes by Tiancheng Gong (TLCL Chapter 4)
+
+Commands are often followed by one or more options that modify their behavior.
+    format: command -option arguments
+    shot/long option: -o/--option e.g. 'ls -a' = 'ls --all'
+
+ls Command Usage: ls [OPTION]... [FILE]...
+    Option(Long Option): Description
+    -a(--all):           List all files, including hidden files.
+    -d(--directory):     Use this option in conjunction with the -l option to see details about the directory rather than its contents.
+    -F(--classify):      This option will append an indicator character to the end of each listed name. E.g. directory -> '/'
+    -l:                  Display results in long format.
+    -r(--reverse):       Display the results in reverse order.
+    -S:                  Sort results by file size.
+    -t:                  Sort by modification time.
+
+file: Print a brief description of the file’s contents ('q' to quit)
+
+symbolic link = soft link = symlink
+    e.g. lrwxrwxrwx 1 root root 11 2007-08-11 07:34 libc.so.6 -> libc-2.6.so
+    File referenced by multiple names. 
+        e.g. when 'libc-2.7.so' is released, we only need to derefer 'libc.so.6' to 'libc-2.7.so', and the user will be happy because they can do the work by using the same file at the same place (libc.so.6). Also, if there is an error caused by 'libc-2.7.so', we can easily switch to the old version (if it still exists).

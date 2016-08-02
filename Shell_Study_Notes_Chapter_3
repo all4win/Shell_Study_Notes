@@ -1,0 +1,23 @@
+Shell Study Notes by Tiancheng Gong (TLCL Chapter 3)
+
+pwd: print working directory
+
+ls:
+    list all files under teh current directory
+    hidden files start with '.', use 'ls -a' to show them
+
+absolute path:
+    start from the root directory, e.g. /usr/bin
+
+relative path:
+    start form the current directory (by adding './' or nothing),
+        e.g. Say we are at /user, 'cd bin' = 'cd ./bin' = 'cd /usr/bin' (absolute path)
+    start from the parent directory of the current directory (by adding '../')
+        e.g. Say we are at /user, 'cd ../dev' = 'cd /dev' (absolute path)
+
+cd: 
+    cd: change directory
+    cd -: change directory to the previous directory
+    cd ~user_name: change directory to user_name's home directory
+    cd ..: change directory to the parent directory
+    cd ~: change directory to current user's home directory

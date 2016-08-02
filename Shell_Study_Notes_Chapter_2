@@ -1,0 +1,15 @@
+Shell Study Notes by Tiancheng Gong (TLCL Chapter 2)
+
+X Window System:
+    copy text: highlight the text using left mouse button (double-click or drag)
+    paste text: press the middle mouse button
+
+date: display the current time and date
+
+cal: display a calendar of the current month
+
+df: display the current amount of free space on the disk drivers
+
+free: display the amount of the free memory
+
+exit: exit the terminal
