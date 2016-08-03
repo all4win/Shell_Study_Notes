@@ -14,7 +14,7 @@ ls Command Usage: ls [OPTION]... [FILE]...
     -S:                  Sort results by file size.
     -t:                  Sort by modification time.
 
-file: Print a brief description of the file’s contents ('q' to quit)
+file -- Print a brief description of the file’s contents ('q' to quit)
 
 symbolic link = soft link = symlink
     e.g. lrwxrwxrwx 1 root root 11 2007-08-11 07:34 libc.so.6 -> libc-2.6.so

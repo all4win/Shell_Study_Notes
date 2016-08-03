@@ -1,0 +1,39 @@
+Shell Study Notes by Tiancheng Gong (TLCL Chapter 5)
+
+Wildcards (globbing): Select filenames based on patterns of characters
+    *             : Matches any characters
+    ?             : Matches any single character
+    [characters]  : Matches any character that is a member of the set characters
+    [!characters] : Matches any character that is not a member of the set characters
+    [[:class:]]    : Matches any character that is a member of the specified class
+        [:alnum:] : Matches any alphanumeric character
+        [:alpha:] : Matches any alphabetic character
+        [:digit:] : Matches any numeral
+        [:lower:] : Matches any lowercase letter
+        [:upper:] : Matches any uppercase letter
+
+cp -- Copy files and directories
+    cp Command Usage: cp SOURCE... DEST
+    Option(Long Option): Description
+    -a(--archive)      : Copy the files and directories and all of their attributes, including ownerships and permissions. Normally, copies take on the default attributes of the user performing the copy
+    -i(--interactive)  : Before overwriting an existing file, prompt the user for confirmation. If this option is not specified, cp will silently overwrite files.
+    -r(--recursive)    : Recursively copy directories and their contents. This option (or the -a option) is required when copying directories.
+    -u(--update)       : When copying files from one directory to another, only copy files that either don't exist, or are newer than the existing corresponding files, in the destination directory.
+    -v(--verbose)      : Display informative messages as the copy is performed.
+
+mv -- Move/rename files and directories
+
+mkdir -- Create directories
+
+rm -- Remove (Rename) files and directories
+
+ln -- Create hard and symbolic links
+    ln [FILE] [LINK] -- hard link
+        A hard link cannot reference a file outside its own file system. This means a link may not reference a file that is not on the same disk partition as the link itself.
+        A hard link may not reference a directory.
+    ln -s [ITEM] [LINK] -- soft link (symbolic link or symlink)
+
+Difference between hard link and soft link:
+    A hard link is the file itself with a different name or path -- A soft link is a file that refers to another file
+    A hard link has the same inode as the original file -- A soft link itself has a new inode
+    Call delete on the file that one hard link referring does not affect the visiting of another hard link on the same file (if another hard link exists) -- A soft link will refer to nothing if the same operation is applied.

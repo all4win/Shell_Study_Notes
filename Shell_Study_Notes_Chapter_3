@@ -2,8 +2,7 @@ Shell Study Notes by Tiancheng Gong (TLCL Chapter 3)
 
 pwd: print working directory
 
-ls:
-    list all files under teh current directory
+ls -- List all files under teh current directory
     hidden files start with '.', use 'ls -a' to show them
 
 absolute path:
