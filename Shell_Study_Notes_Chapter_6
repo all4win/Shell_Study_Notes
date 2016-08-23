@@ -1,0 +1,22 @@
+Shell Study Notes by Tiancheng Gong (TLCL Chapter 6)
+
+What is a Command:
+    1. An executable program like all those files we saw in /usr/bin. Within this category, programs can be compiled binaries such as programs written in C and C++, or programs written in scripting languages such as the shell, perl, python, ruby, etc.
+    2. A command built into the shell itself. bash supports a number of commands internally called shell builtins. The cd command, for example, is a shell builtin.
+    3. A shell function. These are miniature shell scripts incorporated into the environment. 
+    4. An alias. Commands that we can define ourselves, built from other commands.
+
+type – Indicate how a command name is interpreted
+
+which – Display which executable program will be executed
+
+man – Display a command’s manual page
+
+apropos – Display a list of appropriate commands
+
+info – Display a command’s info entry
+
+whatis – Display a very brief description of a command
+
+alias – Create an alias for a command
+unalias to delete an alias

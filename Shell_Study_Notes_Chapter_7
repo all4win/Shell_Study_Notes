@@ -1,0 +1,48 @@
+Shell Study Notes by Tiancheng Gong (TLCL Chapter 7)
+
+I/O redirection:
+    Standard Input (stdin): usually from keyboard
+    Standard Output (stdout): usually to screen (terminal, console)
+    Redirection: change the input source and output destination
+
+'>':
+    A redirection operator followed by the name of the output file
+    Write standard output from the beginning of the file.
+    Small trick: use '> [filename]' as create a new file (or re-write a existed file)
+
+'>>':
+    Append redirected output to a file instead of overwriting the file from the beginning.
+
+
+file descriptor:
+    Standard input, output and error == 0, 1, and 2
+
+redirect err and stdout together:
+    Approach 1: '[output] > [filename] 2>&1'
+    Approach 2: '[output] &> [filename]' which is recommended
+
+discard message:
+    Redirect output to a special file called “/dev/null”. This file is a system device called a bit bucket which accepts input and does nothing with it.
+    e.g. : '[output] 2> /dec/null'
+
+pipe operator “|”:
+    the standard output of one command can be piped into the standard input of another
+    Usage: [source] | [dest]
+    e.g.1: ls -l /usr/bin | less
+    e.g.2: ls /bin /usr/bin | sort | less
+
+cat - Concatenate files
+
+sort - Sort lines of text
+
+uniq - Report or omit repeated lines
+
+grep - Print lines matching a pattern
+
+wc - Print newline, word, and byte counts for each file
+
+head - Output the first part of a file
+
+tail - Output the last part of a file
+
+tee - Read from standard input and write to standard output and files

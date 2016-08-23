@@ -1,0 +1,17 @@
+Some useful command
+
+xdg-open -- opens a file or URL in the user's preferred application
+
+touch -- Update the access and modification times of each FILE to the current time. A FILE argument that does not exist is created empty, unless -c or -h
+is supplied.
+
+nano,vim,emacs -- open files (if file does not exist, create the file and then open) with specfic editor tools
+
+permanently alias:
+    step 1: open file '~/.bashrc'
+    step 2: edit it by appending new alias at the end of the file
+    step 3: run '~/.bashrc' by calling '. /.bashrc'
+    
+'.' in terminal: source a shell script (apply the script on the current work environment) see http://unix.stackexchange.com/questions/114300/whats-the-meaning-of-a-dot-before-a-command-in-shell for details.
+
+
