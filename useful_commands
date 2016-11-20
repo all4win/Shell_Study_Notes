@@ -14,4 +14,5 @@ permanently alias:
     
 '.' in terminal: source a shell script (apply the script on the current work environment) see http://unix.stackexchange.com/questions/114300/whats-the-meaning-of-a-dot-before-a-command-in-shell for details.
 
-
+sudo su: get the root permission WITHIN the terminal (starting at the current directory)
+sudo -i: get the root permission WITHIN the terminal (starting at the user's home directory)
