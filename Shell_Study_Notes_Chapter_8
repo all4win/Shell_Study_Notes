@@ -1,0 +1,18 @@
+Reference:TLCL chapter8
+
+echo: 
+    Display a line of test.
+    Works like print in c.
+    But it will delete extra spaces between words if the arg is not with double quotes.
+
+    eg: 
+      echo *:
+            Echo all file names in the current working directory
+            But it doesn't reveal hidden files
+      echo *s:
+            Echo all file names that match the pattern "*s" in the current working directory (known as path extension)
+      echo /usr/*/share:
+            We can look beyond the current working directory
+      
+
+              
